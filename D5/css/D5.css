@@ -1,0 +1,475 @@
+*{
+     margin: 0%;
+     padding: 0%;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style: none;
+}
+
+.body{
+     background: rgb(78,40,105);
+     background: linear-gradient(90deg, rgba(78,40,105,0.8743872549019608) 0%, rgba(253,29,29,0.6306897759103641) 50%, rgba(159,112,44,0.865983893557423) 100%);
+
+}
+ 
+
+
+.container{
+     max-width: 100%;
+     width: 90%;
+     height: 100vh;
+     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+     background-size:cover;
+     background-position: center;
+     font-family: sans-serif;
+     margin-left: 5%;
+     margin-right: 5%;
+     border-radius: 10px;
+     box-shadow: 30px 30px 30px rgba(41, 36, 36, 0.678);
+}
+
+.header{
+     width: 100%;
+     height: 100vh;
+     background: rgb(0,0,0,0.7);
+     position: relative;
+     border-radius: 10px;
+     display: flex;
+}
+.header .side{
+     width: 50px;
+     height: 100vh;
+     background:rgb(0,0,0,0.6);
+     border-top-left-radius:10px ;
+     border-bottom-left-radius:10px ;
+}
+.icon-sosial ,
+.call ,
+.email{
+     width: 100%;
+     height: 211.5px;
+     border-right: 1px solid rgb(245, 245, 245,0.3);
+     color: white;
+     writing-mode: tb-rl;
+     text-orientation: mixed;
+     justify-items: center;
+     padding: 15px;
+     display: grid;
+     font-size: 14px;
+
+}
+.header .side .call{
+     border-top: 1px solid rgb(245, 245, 245,0.3);  
+     border-bottom: 1px solid rgb(245, 245, 245,0.3);  
+}
+
+.header .side .icon-sosial{
+     grid-row-gap: 1px;
+     grid-column-gap: 9px;
+     color: white;
+     justify-items: center;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+}
+
+.header .side .icon-sosial .icon{
+     padding: 10px;
+} 
+
+.navbar{
+     display: block;
+     width: 100%;
+     height: 100vh;
+}
+
+nav{
+     width: 100%;
+     height: 50px;
+     background: rgb(0,0,0,0.2);
+     color: white;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     align-content: center;
+     padding: 0 50px 0 50px ;
+     position: relative;
+     border-radius: 10px;
+     border-bottom: 1px solid rgb(245, 245, 245,0.1);
+     border-bottom-left-radius: 0px;
+     border-bottom-right-radius: 0px;
+     
+}
+
+a, h1,h2,h3,h4,h5,p{
+     text-decoration: none;
+     color: white;
+}
+
+nav .logo{
+     color: rgb(253, 253, 253);
+     font-size: 20px;
+     font-weight: bold;
+    
+}
+nav .logo span{
+     color: rgb(240, 118, 97);
+}
+
+nav ul{
+     display: flex;
+     list-style-type: none;
+     position: relative;
+
+}
+
+nav ul li{
+     display: flex;
+     position: relative;
+     padding: 10% 10px;
+}
+
+nav ul li a{
+     color: white;
+     text-transform: uppercase;
+     border: 1px solid transparent;
+     padding: 7px 10px;
+     border-radius: 5px;
+     font-weight: bold;
+     font-size: 12px;
+}
+
+nav .topside{
+     display: flex;
+     cursor: pointer;
+     color: white;
+     font-size: 15px;
+     float: right;
+     padding: 10px;
+}
+
+nav .topside .search , .user{
+     padding: 12px;
+}
+
+.navbar .content{
+     display: flex;
+     width: 100%;
+     height: 85.9vh;
+     position: relative;
+}
+.navbar .content .content-text{
+     width: 50%;
+     height: 100%;
+     padding-top: 15%;
+     padding-left: 5%;    
+}
+
+.navbar .content .content-text h1{
+     font-size: 40px;
+     width: 80%;
+     padding: 5px;
+} 
+.navbar .content .content-text span{
+     color: rgb(240, 118, 97);;
+} 
+
+.navbar .content .content-text p{
+     width: 90%;
+     padding: 5px;
+     font-size: 14px;
+     word-spacing: normal;
+     justify-content: center;
+     line-height: 30px;
+     padding-bottom: 40px;
+}
+.navbar .content .content-text .btn{
+     
+     padding:15px;
+     height: 100px;
+     width: 100%;
+     border-bottom: 1px solid rgb(255, 255, 255);
+     border-radius: 5px ;
+     transition: transform 0.5s;
+}
+
+.navbar .content .content-text .btn:hover{
+     transform: scale(1.2);
+}
+.navbar .content .content-text a{
+     color:rgb(240, 118, 97);
+}
+/* 
+.navbar .content section h1 {
+     color: rgb(253, 253, 253);
+     font-size: 20px;
+     font-weight: bold;
+     text-align: center;
+     padding-top: 40%;
+
+}
+
+.navbar .content section span {
+     color: rgb(240, 118, 97);
+}
+
+
+.navbar .content section{
+     position:absolute;
+     top: 10%;
+     width:40%;
+     height:80%;
+     background: url(../img/bg.jpg);
+     background-attachment:fixed;
+     background-repeat:no-repeat;
+     background-size: 100% 100%;
+     background-position: center;
+     background-size: cover;
+     opacity: 0.5;
+     border-radius: 50px;
+}
+
+.navbar .content section:before{
+     content:'';
+     position:absolute;
+     top:0;
+     left:0;
+     width:100px;
+     height:100%;
+     border-radius: 50px;
+     background: url(../img/bg.jpg);
+     background-attachment:fixed;
+     background-repeat:no-repeat;
+     background-size: 100% 100%;
+     box-shadow:20px 0 100px rgba(0,0,0,0.2),
+               -20px 0 100px rgba(0,0,0,0.2);
+     background-size:110%;
+     animation: animate 5s ease-in-out infinite;
+}
+
+@keyframes animate{
+     0%,100%{
+     left:0px;
+     }
+     
+     50%{
+     left:calc(100% - 200px);
+     }
+} */
+
+.navbar .content .foto{
+     width: 50%;
+     height: 50vh;
+     padding-top: 8%;
+}
+.navbar .content .foto .img{
+     width: 100%;
+     height: 20vh;
+}
+
+.img0{height: 20vh;}
+.img1{height: 27vh;}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 0;
+  position: relative;
+}
+section img {
+  width: 100%;
+  height: 55vh;
+}
+section article {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-image: radial-gradient( circle farthest-corner at 30% 20%,  rgba(14,174,87,1) 30%, rgba(12,116,117,1) 90% );
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 9px;
+  mix-blend-mode: lighten;
+  opacity: 0.5;
+}
+section div {
+  background: black;
+  height: 12.5vw;
+}
+section div:nth-of-type(2) {
+  grid-column: 2 / 4;
+}
+
+
+
+
+
+.navbar .footer{
+     height: 40px;
+     display: flex;
+     justify-content: space-between;
+     justify-items: center;
+     opacity: 0.5;
+     align-items: center;
+     width: 100%;
+}
+
+.navbar .footer .f1{
+     padding-left: 50px;
+     margin-right: -100px;
+}
+
+.navbar .footer .f3{
+     font-size: 15px;
+     color: white;
+     padding-right: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:909px){
+     nav .logo{
+          display: block;
+          position: fixed;
+     }
+     nav .topside{
+          display: block;
+          float: right;
+          position: fixed;
+          width: 90%;
+          margin-left: 70%;
+     }
+     nav ul{
+          position: fixed;
+          width: 90%;
+          margin-left: 5%;
+          margin-right: 5%;
+          height: 100vh;
+          background:rgba(50, 59, 52, 0.473) ;
+          top: 50px;
+          left: 0;
+          color:white;
+          display: block;
+     }
+     nav li{
+          display: block;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          margin: -50px;
+          margin-top: 0px;
+     }
+     nav a{
+          color: black;
+          font-size: 20px;
+          margin:5px;
+          margin: -50px;
+     } 
+     nav a:hover{
+          color: rgba(40, 35, 109, 0.712);
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA */
+@media (min-width: 1281px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  /* CSS */
+  
+}
