@@ -1,0 +1,54 @@
+<html>
+
+<head>
+	<title>Portofolio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<div class="header">
+	<nav>
+		<a href="" class="logo">LOGO</a>
+		<ul>
+			<li><a href="">DASHBOARD</a></li>
+			<li><a href="">ABOUT</a></li>
+			<li><a href="">SERVICES</a></li>
+			<li><a href="">PORTOFOLIO</a></li>
+			<li><a href="">CONTACT</a></li>
+		</ul>
+		<a href="" class="btn">Follow Us</a>
+	</nav>
+	<div class="content">
+		<div class="principal">
+			<h1>I'M <span class="auto-input"></span></h1>
+			<h3>Lorem ipsum, dolor sit amet consectetur adipisicing.</h3>
+			<a href="mailto:bangkitpr4@gmail.com">Contact Us</a>
+			<a href="file/CV.pdf" class="btn">Download CV</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	var typed = new Typed(".auto-input", {
+		strings: ["Front-end Developer"],
+		typeSpeed: 100,
+		backSpeed: 100,
+		loop: true
+	})
+
+	$('.logo a').on('click', function (e) {
+		if (this.hash !== '') {
+			e.preventDefault();
+
+			const hash = this.hash;
+
+			$('html, body')
+				.animate({
+					scrollTop: $(hash).offset().top
+				}, 800);
+		}
+	});
+
+</script>
+
+
+</html>
