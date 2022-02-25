@@ -1,0 +1,197 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Comic Neue', cursive;
+}
+
+.headerbg{
+     width: 100%;
+     height: 100vh;
+     background-position: center;
+     background-size: cover;
+     /* background-image: linear-gradient( 109.6deg,  rgba(209,0,116,1) 11.2%, rgba(110,44,107,1) 91.1% ); */
+     position: relative;
+     background-image: url(../img/bg.jpg);
+
+}
+
+.head{
+     width: 100%;
+     height: 100vh;
+     background: rgb(0,0,0,0.5);   
+}
+
+nav{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     box-sizing: border-box;
+     padding-left: 8%;
+     padding-right: 8%;
+     background: rgb(0,0,0,0.1); 
+     padding: 25px;
+}
+
+nav .logo{
+     list-style: none;
+     list-style-type: none;
+     display: flex;
+     padding-left: 5%;
+     font-weight: bold;
+     color: white;
+     font-size: 35px;
+     transition:  transform .4s;
+     cursor: pointer;
+}
+
+nav .logo:hover{
+     transform: scale(1.3);
+}
+
+a{
+     text-decoration: none;
+     color: white;
+     font-weight: bold;
+}
+
+nav ul{
+     display: flex;
+     position: fixed;
+     padding-left: 33%;
+}
+
+nav ul li{
+     display: flex;
+     list-style-type: none;
+     padding: 10% 25px;
+}
+
+nav ul li a{
+     text-decoration: none;
+     color: white;
+     font-weight: bold;
+}
+
+nav ul li a:hover{
+     color: rgb(243, 207, 45);
+}
+
+nav img {
+     width: 9%;
+}
+
+span {
+     color: rgb(243, 207, 45);
+     cursor: pointer;
+}
+
+.search{
+     padding-right: 5%;
+}
+.search-box{
+     transform: translate(-5%,5%);
+     border-radius: 80px;
+     height: 40px;
+     padding: 10px;
+     background: rgba(0, 0, 0, 0.4 );
+}
+
+.search-box:hover > .search-text {
+     width: 180px;
+     padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+     color: rgb(243, 207, 45);
+}
+
+.search-btn{
+     border-radius: 80%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     float: right;
+     color: white;
+     width: 40px;
+     height: 20px;
+     transition: 0.5s;
+}
+.search-text{
+     border: none;
+     background: none;
+     outline: none;
+     padding: 0;
+     float: left;
+     color: white;
+     font-size: 16px;
+     transition: 0.4s;
+     width: 0px;
+     line-height: 10px;
+}
+
+/* BODY */
+.content {
+     position: absolute;
+     top: 30%;
+     /* bottom: 50%; */
+     left: 10%;
+     transform: translateY(-50%, -50%);
+     width: 400px;
+     display: flex;
+}
+
+.content p {
+     font-size: 18px;
+     color: white;
+
+}
+
+.content span{
+     font-size: 43px;
+     background: rgb(231,247,17);
+background: linear-gradient(124deg, rgba(231,247,17,1) 0%, rgba(222,182,13,1) 1%, rgba(219,158,11,1) 23%, rgba(215,127,9,1) 47%, rgba(210,95,7,1) 100%);
+-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
+
+/* FOoter */
+
+footer{
+     position: relative;
+     display: flex;
+     color: white;
+     padding: 1%;
+     float: right;
+     padding-top: 35%;
+     padding-right: 10%;
+     padding-bottom: 2%;
+     cursor: pointer;
+}
+.play {
+     padding-top: 35%;
+     padding-left: 3%;
+     color: white;
+     font-size: 50px;
+}
+
+.play a{
+     font-size: 30px;
+     text-decoration: none;
+     padding-bottom: 500px;
+}
+
+footer .fb ,.tw ,.ig{
+     padding: 20%;
+     padding-right: 60%;
+
+}
+
+
+
+footer i:hover{
+     color: yellow;
+     transition: 0.5s;
+     transform: scale(1.5);
+}
